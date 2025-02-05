@@ -6,16 +6,14 @@ export default function LandingPage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white to-gray-50/50 flex items-center justify-center">
       {/* Background pattern */}
-      <div className="absolute inset-0 -z-10 h-full w-full bg-[#e5e5f7] bg-opacity-30" style={{
-        backgroundImage: `linear-gradient(30deg, #111010 12%, transparent 12.5%, transparent 87%, #111010 87.5%, #111010), 
-                         linear-gradient(150deg, #111010 12%, transparent 12.5%, transparent 87%, #111010 87.5%, #111010),
-                         linear-gradient(30deg, #111010 12%, transparent 12.5%, transparent 87%, #111010 87.5%, #111010),
-                         linear-gradient(150deg, #111010 12%, transparent 12.5%, transparent 87%, #111010 87.5%, #111010),
-                         linear-gradient(60deg, #11101077 25%, transparent 25.5%, transparent 75%, #11101077 75%, #11101077),
-                         linear-gradient(60deg, #11101077 25%, transparent 25.5%, transparent 75%, #11101077 75%, #11101077)`,
-        backgroundSize: "40px 70px",
-        backgroundPosition: "0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px"
+      <div className="absolute inset-0 -z-10 h-full w-full" style={{
+        backgroundColor: "#e5e5f7",
+        opacity: 0.8,
+        backgroundImage: `radial-gradient(circle at center center, #c1c3e0, #e5e5f7), 
+                         repeating-radial-gradient(circle at center center, #c1c3e0, #c1c3e0, 10px, transparent 20px, transparent 10px)`,
+        backgroundBlendMode: "multiply"
       }} />
+      
 
       <section className="w-full px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8 flex flex-col items-center space-y-10 text-center">
         {/* Hero content */}
