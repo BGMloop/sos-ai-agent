@@ -34,12 +34,7 @@ export const send = mutation({
     content: v.string(),
   },
   handler: async (ctx, args) => {
-    if (SHOW_COMMENTS) {
-      console.log("📤 Sending message:", {
-        chatId: args.chatId,
-        content: args.content,
-      });
-    }
+
 
     // const identity = await ctx.auth.getUserIdentity();
     // if (!identity) {

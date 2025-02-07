@@ -44,6 +44,22 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# crawai whole project
+crawai/
+
+lib/
+lib/hooks/
+lib/utils/
+lib/context/
+lib/components/
+lib/types/
+lib/utils/
+lib/hanggraph/
+lib/langchain/
+WxflowsIndex.graphql
+WxflowsIndex.ts
+WxflowsTool.ts
+WxflowsTool.graphql
 
 
 # Convex
@@ -78,3 +94,13 @@ SOS-AI-Agent.postman_collection.json
 
 data/
 dataModel.ts
+
+.DS_Store
+.eslintrc.js
+.gitignore
+routes.ts
+systemMessage.ts
+middleware.ts
+message.ts
+navigation.ts
+

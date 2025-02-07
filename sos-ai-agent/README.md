@@ -13,6 +13,20 @@ pnpm dev
 # or
 bun dev
 ```
+And Convex functions 
+npx convex dev
+
+Or:
+
+pnpm dev instead of npm run dev
+pnpm build instead of npm run build
+pnpm test instead of npm run test
+
+Explanation:
+"dev": "next dev": Starts the Next.js development server.
+"build": "next build": Creates an optimized production build.
+"start": "next start": Starts the Next.js production server.
+"lint": "next lint": Runs ESLint for code linting.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

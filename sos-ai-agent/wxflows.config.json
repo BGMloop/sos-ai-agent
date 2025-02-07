@@ -1,0 +1,10 @@
+{
+  "endpoint": "api/chat-app-example",
+  "tools": [
+    "wikipedia",
+    "google_books",
+    "youtube_transcript",
+    "math",
+    "exchange"
+  ]
+}
