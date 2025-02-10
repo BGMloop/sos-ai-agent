@@ -47,6 +47,11 @@ next-env.d.ts
 # crawai whole project
 crawai/
 
+# Convex
+Convex/
+
+Convex/dataModel.ts
+
 lib/
 lib/hooks/
 lib/utils/
