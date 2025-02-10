@@ -1,0 +1,30 @@
+{
+  "name": "sos-ai-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hookform/resolvers": "^3.10.0",
+<<<<<<< Updated upstream:sos-ai-agent/sos-ai-agent/package.json
+    "@langchain/anthropic": "^0.3.13"
+=======
+    "@langchain/anthropic": "^0.3.13",
+    "@langchain/langgraph": "^0.2.45",
+    "@wxflows/sdk": "0.2.0-beta.3",
+    "@langchain/core": "^0.3.37",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+>>>>>>> Stashed changes:package.json
+  }
+}
