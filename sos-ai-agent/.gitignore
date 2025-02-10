@@ -75,11 +75,7 @@ WxflowsTool.graphql
 .clerk/
 
 
-# package files
-package-lock.json
-yarn.lock
-package.json
-
+#  files
 components/
 
 

@@ -15,7 +15,7 @@ WxflowsTool.graphql
 
 ------------------------------------------------------------------------------------------------------------------------------------
 # From wxflows/tools.graphql
-# [[ tool definition example ]]
+# [[ tools definition example ]]
 # .
 # Flows Engine allows creating LLM "tools" from parts of your GraphQL schema. To
 # do that, add a field to the Query type, using the example below and replacing
@@ -55,4 +55,3 @@ Name: CLERK_ISSUER_URL
 Value: Paste your Clerk Issuer URL from step 1
 ------------------------------------------------------------------------------------------------------------------------------------
 what I deleted "langchain": "link:wxflows/sdk/langchain",
-"langchain": "^0.1.9",
