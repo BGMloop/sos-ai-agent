@@ -1,9 +1,9 @@
-import { Id } from "@/convex/_generated/dataModel";
-import { api } from "@/convex/_generated/api";
-import { getConvexClient } from "@/lib/convex";
+import { Id } from "../../../../convex/_generated/dataModel";
+import { api } from "../../../../convex/_generated/api";
+import { getConvexClient } from "../../../../lib/convex";
 import { redirect } from "next/navigation";
 import { auth } from "@clerk/nextjs/server";
-import ChatInterface from "@/components/ChatInterface";
+import ChatInterface from "../../../../components/ChatInterface";
 
 interface ChatPageProps {
   params: {
