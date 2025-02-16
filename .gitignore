@@ -67,3 +67,8 @@ middleware.ts
 message.ts
 navigation.ts
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
