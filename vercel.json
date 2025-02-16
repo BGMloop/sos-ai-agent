@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "rm -rf node_modules && rm -f package-lock.json pnpm-lock.yaml && npm install",
+  "framework": "nextjs",
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+} 

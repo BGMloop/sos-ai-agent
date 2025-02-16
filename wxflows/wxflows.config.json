@@ -1,0 +1,12 @@
+{
+  "endpoint": "api/mottled-terrier",
+  "tools": [
+    "wikipedia",
+    "google_books",
+    "youtube_transcript",
+    "math",
+    "exchange",
+    "customerData",
+    "dummyComments"
+  ]
+}

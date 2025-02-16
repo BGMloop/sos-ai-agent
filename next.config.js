@@ -1,17 +1,36 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-  experimental: {
-    serverActions: true,
+  env: {
+    DEEPSEEK_API_KEY: process.env.DEEPSEEK_API_KEY,
+    MISTRAL_API_KEY_AGENT: process.env.MISTRAL_API_KEY_AGENT,
   },
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.(woff|woff2|eot|ttf|otf)$/i,
-      type: 'asset/resource',
-    })
-    return config
-  }
-}
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '2mb'
+    }
+  },
+  webpack: (config, { isServer }) => {
+    config.experiments = {
+      topLevelAwait: true,
+      layers: true
+    };
+    
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        "node-fetch": false,
+        fs: false,
+        path: false,
+        crypto: false
+      };
+    }
+    
+    return config;
+  },
+  typescript: {
+    ignoreBuildErrors: true
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

@@ -1,3 +1,5 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
 # dependencies
 /node_modules
 /.pnp
@@ -21,7 +23,6 @@
 # misc
 .DS_Store
 *.pem
-.vscode
 
 # debug
 npm-debug.log*
@@ -29,9 +30,8 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# local env files
-.env
-.env.*
+# env files
+.env*
 !.env.example
 
 # vercel
@@ -39,10 +39,31 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
 
 # Convex
 .convex/
 
 # Clerk
 .clerk/
+
+#  files
+components/
+.cursor/rules/ai-agent-rules.mdc
+.npmrc
+app/api/chat/stream/route.ts
+
+
+SOS-AI-Agent.postman_collection.json
+
+data/
+dataModel.ts
+
+.DS_Store
+.eslintrc.js
+.gitignore
+routes.ts
+systemMessage.ts
+middleware.ts
+message.ts
+navigation.ts
+
