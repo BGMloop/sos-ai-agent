@@ -10,22 +10,7 @@ const nextConfig = {
       bodySizeLimit: '2mb'
     }
   },
-  webpack: (config, { isServer }) => {
-    config.experiments = {
-      topLevelAwait: true,
-      layers: true
-    };
-    
-    if (!isServer) {
-      config.resolve.fallback = {
-        ...config.resolve.fallback,
-        "node-fetch": false,
-        fs: false,
-        path: false,
-        crypto: false
-      };
-    }
-    
+  webpack: (config) => {
     return config;
   },
   typescript: {
