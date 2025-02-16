@@ -1,0 +1,10 @@
+type Customer {
+  id: ID!
+  name: String
+  email: String
+  phone: String
+}
+
+type Query {
+  customers: [Customer] @rest(endpoint: "https://introspection.apis.stepzen.com/customers")
+} 
