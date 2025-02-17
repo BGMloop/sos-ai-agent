@@ -37,8 +37,17 @@ yarn-error.log*
 # vercel
 .vercel
 
+# langgraph
+.langgraph/
+lib/langgraph.ts
+lib/test-mistral.ts
+
+
 # typescript
 *.tsbuildinfo
+
+# backend
+backend/
 
 # Convex
 .convex/

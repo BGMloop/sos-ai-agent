@@ -1,4 +1,4 @@
-import { Id } from "@/convex/_generated/dataModel";
+import { Id } from "../convex/_generated/dataModel";
 
 // SSE Constants
 export const SSE_DATA_PREFIX = "data: " as const;

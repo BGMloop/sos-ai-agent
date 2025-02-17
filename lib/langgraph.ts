@@ -19,7 +19,7 @@ import {
   ChatPromptTemplate,
   MessagesPlaceholder,
 } from "@langchain/core/prompts";
-import SYSTEM_MESSAGE from "@/constants/systemMessage";
+import SYSTEM_MESSAGE from "../constants/systemMessage";
 import { DynamicStructuredTool } from "@langchain/core/tools";
 import { z } from "zod";
 import { OpenAI } from "openai";
@@ -172,7 +172,7 @@ const createWorkflow = async () => {
         const relevantDocs = await retriever.getRelevantDocuments(messageContent);
 
         const systemContent = SYSTEM_MESSAGE + "\n\nRelevant context:\n" + 
-          relevantDocs.map(doc => doc.pageContent).join("\n");
+          relevantDocs.map((doc: { pageContent: string }) => doc.pageContent).join("\n");
 
         const promptTemplate = ChatPromptTemplate.fromMessages([
           new SystemMessage(systemContent),
