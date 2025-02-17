@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+.venv/
 .venv/**
 .pnp.*
 .yarn/*
@@ -68,6 +69,22 @@ components/
 .cursor/rules/ai-agent-rules.mdc
 .npmrc
 app/api/chat/stream/route.ts
+app/dashboard/chat/[chatId]/page.tsx
+app/
+backend/
+constants.ts
+convex/
+constants/systemMessage.ts
+constants/
+components.json
+next-env.d.ts
+next.config.mjs
+tsconfig.json
+tsconfig.node.json
+vercel.json
+wxflow.json
+wxflow.config.ts
+
 
 
 SOS-AI-Agent.postman_collection.json
@@ -77,6 +94,7 @@ dataModel.ts
 
 .DS_Store
 .eslintrc.js
+.eslintrc.json
 .gitignore
 routes.ts
 systemMessage.ts
