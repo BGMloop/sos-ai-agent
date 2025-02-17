@@ -1,4 +1,4 @@
-import { Id } from "../../../../convex/_generated/dataModel";
+import { Id } from "convex/_generated/dataModel";
 import { api } from "../../../../convex/_generated/api";
 import { getConvexClient } from "../../../../lib/convex";
 import { redirect } from "next/navigation";
@@ -12,7 +12,7 @@ interface ChatPageProps {
 }
 
 export default async function ChatPage({ params }: ChatPageProps) {
-  const { chatId } = await params;
+  const { chatId } = params;
 
   // To get user authentication
   const { userId } = await auth();
@@ -23,7 +23,7 @@ export default async function ChatPage({ params }: ChatPageProps) {
 
   try {
     // To get Convex client and fetch chat and messages
-    const convex = getConvexClient();
+    const convex = await getConvexClient();
 
     // To check if chat exists & user is authorized to view it
     const chat = await convex.query(api.chats.getChat, {

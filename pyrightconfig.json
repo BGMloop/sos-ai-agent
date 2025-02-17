@@ -1,0 +1,18 @@
+{
+  "include": ["backend"],
+  "exclude": [
+    "**/node_modules",
+    "**/__pycache__",
+    ".venv"
+  ],
+  "reportMissingImports": "none",
+  "reportMissingModuleSource": "warning",
+  "reportMissingTypeStubs": "none",
+  "reportImportCycles": "warning",
+  "reportUnusedImport": "information",
+  "reportUnusedClass": "information",
+  "pythonVersion": "3.10",
+  "typeCheckingMode": "basic",
+  "venvPath": ".",
+  "venv": ".venv"
+} 

@@ -2,7 +2,6 @@ import sounddevice as sd
 import soundfile as sf
 import numpy as np
 import sys
-import os
 
 def record_audio(duration=5, filename="test_audio.wav"):
     """Record audio from microphone and save to WAV file."""
@@ -33,4 +32,4 @@ def record_audio(duration=5, filename="test_audio.wav"):
 
 if __name__ == "__main__":
     duration = float(sys.argv[1]) if len(sys.argv) > 1 else 5
-    record_audio(duration) 
+    record_audio(int(duration)) 

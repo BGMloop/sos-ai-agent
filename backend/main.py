@@ -1,9 +1,7 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-import speechbrain as sb
-from speechbrain.inference import EncoderDecoderASR
+from speechbrain.pretrained import EncoderDecoderASR
 import os
-import io
 
 app = FastAPI()
 
@@ -17,10 +15,7 @@ app.add_middleware(
 )
 
 # Initialize ASR model
-asr_model = EncoderDecoderASR.from_hparams(
-    source="speechbrain/asr-conformer-transformerlm-librispeech",
-    run_opts={"device": "cpu"}
-)
+asr_model = EncoderDecoderASR.from_hparams(source="speechbrain/asr-transformer-transformerlm-librispeech")
 
 @app.post("/transcribe")
 async def transcribe_audio(audio: UploadFile = File(...)):

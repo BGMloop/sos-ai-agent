@@ -1,6 +1,6 @@
 "use client";
 
-import Header from "@/components/Header";
+import Header from "../../components/Header";
 import { NavigationProvider } from "@/lib/context/navigation";
 import { Authenticated } from "convex/react";
 import Sidebar from "@/components/Sidebar";

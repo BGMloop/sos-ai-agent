@@ -1,5 +1,4 @@
 from speechbrain.pretrained import EncoderDecoderASR
-import torchaudio
 import os
 
 def test_asr():

@@ -22,11 +22,6 @@ import {
 import SYSTEM_MESSAGE from "../constants/systemMessage";
 import { DynamicStructuredTool } from "@langchain/core/tools";
 import { z } from "zod";
-import { OpenAI } from "openai";
-import fetch from "node-fetch";
-import { ChatAnthropic } from "@langchain/anthropic";
-import { RunnableSequence } from "@langchain/core/runnables";
-import { StringOutputParser } from "@langchain/core/output_parsers";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { MistralAIEmbeddings } from "@langchain/mistralai";
 import { MemoryVectorStore } from "langchain/vectorstores/memory";
@@ -40,8 +35,6 @@ const TOOL_SCHEMAS = {
   customerData: `type Query { customers: [Customer] @rest(endpoint: "https://introspection.apis.stepzen.com/customers") }`,
   dummyComments: `type Query { comments: [Comment] @rest(endpoint: "https://dummyjson.com/comments") }`
 };
-
-const messageCache = new Map<string, BaseMessage[]>();
 
 const initTools = async () => {
   const toolClient = new WxFlows({

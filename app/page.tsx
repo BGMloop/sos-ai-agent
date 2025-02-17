@@ -45,8 +45,7 @@ export default function LandingPage() {
         <SignedOut>
           <SignInButton
             mode="modal"
-            fallbackRedirectUrl={"/dashboard"}
-            forceRedirectUrl={"/dashboard"}
+            redirectUrl="/dashboard"
           >
             <button className="group relative inline-flex items-center justify-center px-8 py-3.5 text-base font-medium text-white bg-gradient-to-r from-indigo-600 to-black rounded-full hover:from-indigo-500 hover:to-black transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
               Sign Up

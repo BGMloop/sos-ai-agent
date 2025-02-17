@@ -3,8 +3,8 @@ import type { Viewport } from "next";
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import "./globals.css";
-import { ConvexClientProvider } from "../components/ConvexClientProvider";
 import { ClerkProvider } from "@clerk/nextjs";
+import ConvexClientProvider from "@/components/ConvexClientProvider";
 import NavBar from "../components/NavBar";
 
 export const metadata: Metadata = {
@@ -32,7 +32,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${GeistSans.className} ${GeistMono.variable} antialiased min-h-screen`}>
-        <ClerkProvider>
+        <ClerkProvider appearance={{ 
+          baseTheme: undefined 
+        }}>
           <ConvexClientProvider>
             <NavBar />
             {children}

@@ -1,5 +1,4 @@
 import { spawn } from 'child_process';
-import * as fs from 'fs';
 
 export async function recordAudio(duration: number = 5): Promise<string> {
   return new Promise((resolve, reject) => {
