@@ -3,16 +3,14 @@
 # dependencies
 /node_modules
 /.pnp
-# Python virtual environment
-.venv
-venv
-ENV/
-env/
-*.pyc
-__pycache__/
-*.so
-*.dylib
-*.dll
+.venv/
+.venv/**
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
 # testing
 /coverage
@@ -103,6 +101,11 @@ systemMessage.ts
 middleware.ts
 message.ts
 navigation.ts
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
 
 node_modules/
 .next/
