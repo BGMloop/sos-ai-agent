@@ -3,14 +3,17 @@
 # dependencies
 /node_modules
 /.pnp
-.venv/
-.venv/**
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+
+# Python environment
+.venv
+venv
+ENV
+__pycache__
+*.py[cod]
+*.so
+*.dylib
+*.dll
+*.pyd
 
 # testing
 /coverage
@@ -43,7 +46,6 @@ yarn-error.log*
 .langgraph/
 lib/langgraph.ts
 lib/test-mistral.ts
-
 
 # typescript
 *.tsbuildinfo
@@ -78,8 +80,6 @@ vercel.json
 wxflow.json
 wxflow.config.ts
 
-
-
 SOS-AI-Agent.postman_collection.json
 
 data/
@@ -94,16 +94,3 @@ systemMessage.ts
 middleware.ts
 message.ts
 navigation.ts
-
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-
-node_modules/
-.next/
-.venv/**
-
-**/*.dylib
-**/*.so
-**/*.dll
