@@ -1,5 +1,7 @@
 # SOS AI Agent
 
+This project wasn't built with the appropriate file path relative to the root of the repo. To fix the issue, I tried using files in serverless functions, but I was still getting errors with Vercel. To fix it, I built the appropriate file path relative to the root of the repo with sos-chatbot.github.io.
+
 A sophisticated AI chat application built with Next.js, featuring real-time conversations, advanced prompt caching, and intelligent tool orchestration powered by LangChain and Claude 3.5 Sonnet.
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
